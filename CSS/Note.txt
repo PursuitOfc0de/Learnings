@@ -1,0 +1,268 @@
+# CSS:-
+-CSS stands for Cascading Style Sheets.
+-CSS is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+-CSS is used to add style to web pages.
+-There are three ways to add style(CSS) to a web page. These are:-
+i) Inline CSS
+ii) Internal CSS
+iii) External CSS
+
+## Inline CSS:-
+-Adding styles for an individual element with the help of style attribute.
+Syntax:-
+<p style="color: red;">This is a paragraph</p>
+
+## Internal CSS:- 
+-Used to add styles for multiple elements or writing general styles with the help of style tag inside head tag.
+-We need selectors to select or target the element which we need to change style.
+Syntax:- 
+<style>
+    selector{
+        css-property: value;
+    }
+</style>
+
+## External CSS:- 
+-Writing styles i a separate CSS file and then connecting it to the HTML document with the help of <link> tag.
+-We use <link> tag inside the head tag to connect the external css.
+Syntax:- 
+<link rel="stylesheet" href="fileName.css">
+
+# Selectors in CSS:- 
+CSS selectors are used to select the HTML elements that we want to style.
+1.Element Selector:-
+-It is used to select the elements based on their tag name.
+-Element selector selects all the element with the specific tag name in the entire HTML document.
+e.g:- h1{
+    font-size: 20px;
+}
+
+2. Class Selector:- 
+-It selects the HTML elements based on the given class name.
+-Class name can be provide by using "class" attribute.
+-To selects the classs name in CSS we use dot(.) that acts as class selector.
+e.g:- .className{
+    color: red;
+}
+
+3. ID Selector:-
+-It selects the HTML element based on the given ID name.
+-ID name can be provide by using "id" attribute.
+-ID name should be unique in an HTML document.
+-To select the id names in CSS we use hash(#) that acts as ID selector.
+e.g:- #idName{
+    height: 100px;
+}
+
+4. Universal Selector:- 
+-It is used to select all the elements in the HTML document.
+It is denoted as *
+e.g:- *{
+    margin: 0;
+}
+
+5. Group Selector:-
+-It is used to select multiple elements at once.
+e.g:- h1, #idName, .className, p{
+    background-color: black;
+}
+
+6. Descendant Selector:- 
+-It is used to select a specific child element within a parent element.
+e.g:- .className p{
+    color: red;
+}
+
+# Pseudo classes:-
+-These are used to add styles to selectors but only when selectors meets certain condition.
+-Pseudo class are written using colon(:)
+e.g:- selector:active/hover
+    
+# Pseudo elements:-
+-It is a keyword added to a selector that lets us style a specific part of the selected element.
+-Double colon(::) is used to write Pseudo elements.
+e.g:- ::after, ::before, ::first-line, ::first-letter
+
+# Box-Model in CSS:-
+-Using box model we can specify how an element should be displayed on the web page by giving properties - height & width, padding, border, and margin.
+-The innermost layer of the box model is content itself which includes height and width. Following by padding, border and margin respectively.
+
+## Padding:- It is the inner space between the content and border.
+-Padding values will be applied on the four sides of the content when single value is given for padding.
+-Padding Syntax:- 
+1. padding: 10px (four side equal)
+2. padding: top-bottom left-right
+3. padding: top left-right bottom
+4. padding: top right bottom left
+
+## Border:- Border property is used to define the boundary around an element. 
+-Border for a content can be specify using three values.
+    -border-size 
+    -border-style : solid/dashed/dotted/double
+    -border-color
+e.g:- border: 10px solid green;
+-To curve the edges of border we use border-radius property.
+e.g: border-radius: 5px;
+
+## Margin:- It defines the space between one or more elements.
+-It is the outer white space of an element.
+-It follows the same syntax as padding.
+1. margin: 10px (four side equal)
+2. margin: top-bottom left-right
+3. margin: top left-right bottom
+4. margin: top right bottom left
+
+# Box shadow and Text shadow:-
+-Box shadow is used to give a shadow effect for a selected element. Whereas text shadow used for text.
+Syntax:-
+    box-shadow: x-offset y-offset blur color;
+    text-shadow: x-offset y-offset blud color;
+e.g:-
+    .box {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+# Display Properties:- 
+-It specifies how an element must be aligned or stuctured in a web-page.
+-There are 4-types of display properties.
+1. Block:- The elements that are block, will be displayed one by one & occupies 100% width of the web-page.
+-We can change the height and width of a block element.
+
+2. Inline:- The elements will be displayed in the same row where height and width properties will not work.
+
+3. Inline-block:- Displays all the element in the same row and also can change height and width. 
+
+4. None:- The element will not display in the web page.
+
+# Flex-box:-
+-This property is used to structure the elements in row wise or column wise by giving space allocation for individual elements within the flex area.
+Properties:- 
+1. flex-direction:- It specifies from which direction the elements should be aligned.
+Values:-
+flex-direction: row/row-reverse/column/column-reverse ;
+
+2. align-items:- This property is used to align the items vertically in flex area.
+Values:-
+align-items: flex-start/center/flex-end ;
+
+3. justify-content:- This is used to align the elements horizontally in the flex area.
+Values:- 
+justify-content: start/center/end/space-between/space-around/space-evenly
+
+# Grid-Layout:-
+-CSS grid layout is a two dimentional layout system for the web.
+-A grid is a collection of horizontal & vertical lines creating a pattern against which we can line up our design element. They help us to create designs where element don't jumps arround or change width as we move from page to page.
+Properties:-
+display: grid;
+grid-template-column: repeat(4,1fr)/ 3 4 5;
+grid-gap : 20px/ 30px...
+grid-template-rows: 100px/ 200px;
+
+# CSS units :-
+1. px (pixel) - fixed
+2. % (percentage) - percentage is fully depends upon their parent element
+3. vh (viewport height) & vw (viewport width) - it will increases or decrease their size as per the screen size.
+4. vmax - if the screen size can be sqized to a phone screen so our content can be small it breake that and create a new line of content.
+5. em & rem (root units of CSS) em - we can handle all tag by a root element/tag so that it would be fesiable for our content. (relative units, relative to any one) rem - (1rem = 16px)
+
+# Transform Properties:-
+-Transform properties are used to transform an element from one form to another form or to move from one position to another position.
+1. Rotate:- It is used to rotate an object in clockwise or anti-clockwise direction.
+-To rotate an element we use degree(deg) as an unit.
+Properties:- 
+    rotateX(deg) -It rotates an element on x-axis.
+    rotateY(deg) -It rotates an element on y-axis.
+    rotateZ(deg) -It rotates an element on z-axis.
+
+2. Skew:- It distorts point of an element by a certain angle in horizontal or vertical direction.
+Properties:- 
+    horizontal:- skewX()
+    horizontal:- skewY()
+
+3. Scale:- It allows us to resize an element compared to its original size.
+-scale>1 will increase the size and scale<1 will decrease the size of an element.
+Properties:- 
+    scale() -It will change the size in all direction
+    scaleX() -It will change the size in x-axis or horizontally.
+    scaleY() -It will change the size in y-axis or vertically.
+
+4. Translate:- It allows us to change the position of an element from it's original position to another position over the x-axis and y-axis. 
+-Translate value is provided in pixels.
+Properties:- 
+    translateX() -It translate the element over x-axis, from left to right or left to right.
+    translateY() -It translate the element over y-axis, from top to bottom or bottom to top.
+    translate(val1, val2) -It translate ther element on both axis.
+
+# Transition :- (to change the state)
+transition enables us to define the transition between two states of an element smoothly.
+Properties:- 
+transition-property: property you want to transition(font-size, color, bg color, all)
+transition-duration: 2s/3s/10s ...etc
+transition-timing-function: ease-in/ease-out/linear/steps(5)
+transition-delay: 2s/3s/10s ...etc
+(or)
+transition: property-name duration timing-function delay
+
+# Position property:-
+-Position property is used as a special method in css to specify the exact structure and positions of each element.
+-Position property uses various methods in css like: Static, relative, absolute, fixed, and sticky to specify the exact position of each element depending on their behaviours.
+- In css we have some preoperties like:-
+    top/right/bottom/left
+    These preoperties are used to change the position of on element.
+-However these properties won't work without mentioning the position preoperty and its methods.
+1. Static:- HTML elements are positioned static by default.
+-These elements are not effected by top/right/bottom/left properties.
+
+2. Relative:- The element is positioned relative to its original position.
+-Setting the top/right/bottom/left properties will move that element from its original position & other elements will not be effected.
+
+3. Absolute:- It positions an element relative to it's parent relative positioned container. If there is no parent container with position relative then it relative to the body and these elements ccan overlap other elements.
+
+4. Fixed:- The element will be fixed permanently at a specified position.
+
+5. Sticky:- The element will behave as normal element & gets fixed once it reaches cirtain point of the webpage.
+- A sticky element toggles between relative + fixed depending on the position value.
+
+
+# Responsive Design:- Responsive design ensures a website looks and works well on all devices (desktops, tablets, and phones).
+Techniques:
+-Fluid Grids: Use percentage widths.
+-Flexible Images: max-width: 100%; height: auto;
+-Media Queries: Apply styles based on device size.
+-Responsive Units: Use em, rem, %, vw, vh instead of fixed units.
+
+# CSS Media Queries:- CSS Media Queries are used to apply different styles to different screen sizes or device types.
+Syntax:- 
+@media only (screen-size) and (screen-size) {
+  element {
+    background-color: lightblue;
+  }
+}
+
+Common Breakpoints:
+-Mobile: max-width: 480px
+-Tablet: 481px - 768px
+-Laptop: 769px - 1024px
+-Desktop: 1025px and above
+
+# CSS Animations:- Used to animate transitions between CSS styles using keyframes.
+-To create animation we need keyframes.
+
+## CSS Keyframes:- @keyframes define the behavior of an animation sequence by specifying styles at various points.
+Syntax:-
+@keyframes animation-name {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+Animation Properties:-
+animation-name, animation-duration, animation-delay, animation-iteration-count, animation-timing-function, animation-direction
+(or- short-hand)
+animation: name duration iteration timing-function delay;

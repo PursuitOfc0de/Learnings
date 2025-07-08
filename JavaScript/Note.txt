@@ -1,0 +1,589 @@
+# JavaScript:-
+-JavaScript is a scripting and programming language, introduced to perform live-scripting or dynamic responsive on a web-page.
+-Netscape Communications hired 'Brendan Eich' to develop a scripting language for their browser, Netscape Navigator. Eich created JavaScript in just 10 days.
+-The language was first called "MOCHA", then LiveScript, and finally JavaScript—not because it's related to Java, but as a marketing decision to capitalize on Java’s popularity.
+-JavaScript is used for building logics of a web page.
+-JavaScript is a high level programming language, used in both client side as well as server side.
+-Currently we are using JavaScript version 6 i.e ES6(Echma script 6), which is also called as vanilla JavaScript.
+-Node JS is the run time environment of JavaScript.
+
+## What is Scripting language ?
+-A scripting language is a type of programming language used to automate tasks that executes line by line.
+-For example - JavaScript, Python, PHP... etc.
+
+# Variable Keywords in JS:-
+-Variable keywords are used to declare a variable and to initialize a value to variables.
+-There are three types of variable keywords:-
+    -var
+    -let
+    -const 
+## var:- If a variable is decalred using var keyword then we can re-declare and re-initialize the same variable.
+
+## let:- If a variable is decalred using let keyword then we can re-initialize the same variable but we can't re-declare the same variable.
+
+## const:- Const stands for constant variable.
+-If a variable is decalred using const keyword then neither we re-declare nor re-initialize the same variable.
+
+# Datatypes in JS:- 
+-Datatypes are used to define which type of value we're storing on a variable.
+- By using 'typeof' operator we can check the datatype of a varibale.
+-There are two types of datatypes in JavaScript:-
+    1.Primitive type
+    2.Non-primitive type
+Note:- JavaScript is a dynamic typed language that means, datatype of a variable is assigned based on the value passed by the user during runtime.
+
+1. Primitive-type:-
+## Number type:- Represents all the possible types of numeric values; like - positive, negative, fraction, whole number, etc..
+
+## String type:- Anything enclosed within single(' ') or double(" ") quote is known as string in JS.
+-Basically String is a sequence of character used to represent text.
+-We can access each character by using index numbers. string[0], string[1].... .
+
+## boolean type:- It has only two types of values, i.e true and false.
+-In JavaScript value of true is 1 and value of false is 0.
+
+## null type:- Null means nothing, which is inherited from Object type. It stores nothing.
+
+## undefined type:-When a variable is declared but not assigned a value, it is automatically initialized with undefined.
+
+## Symbol type:– Used for creating unique values (Symbol("unique"))
+-To create a Symbol type variable we need Symbol() operator.
+
+## BigInt type:– Handles very large numbers (BigInt())
+-To create a BigInt type varibale we need BigInt() operator.
+
+2. Non-primitive type or Reference Datatype
+-Reference datatypes are the type of datatype which can hold multiple element in a single variable.
+-Reference datatypes are -> array, object, function
+## Array :-Array is a collection of heterogenious(different datatypes) type of data.
+-Array indexing start from "0", and to access any value we can use the index position, and arrays are dynamic in size.
+-Arrays are used to store multiple values inside a single variable.
+ex. let arr = ["hari", "sita", "ram"] 0 1 2
+
+## Object :-Objects are complex data types used to store collection of key value pairs.
+-Objects can contain various datatypes, including primitive and non-primitive.
+-Keys are unique within an object, and they are used to access the values.
+-We can access the value of an object by using dot notation (object.keyName) or bracket notation (object["keyname"]).
+
+ex:-
+let obj = { name : "hari", 
+    phone : 56789032, 
+    address : "bhubaneswar" 
+    }
+-In the above example left side element are the keys & right side elements are the values of that key.
+
+# Function :-
+-functions are the block of code or set of instruction which are used to perform some specific task.
+-function reduce our code complexity and help organize logic, improve readability, and make code reusable.
+-We need 'function' keyword to create a function in JS.
+
+Syntax :-
+function functionName(){ 
+    //instruction
+ }
+
+function calling ->
+functionName();
+
+# Operators in JS:- Operators are symbols used to perform operations on one or more variable and values.
+
+## Arithmetic Operator:-
+1. Addition (+): Adds two operands.
+2. Subtraction (-): Subtracts right operand from left operand.
+3. Multiplication (*): Multiplies two operands.
+4. Division (/): Divides left operand by right operand.
+5. Modulus (%): Returns the remainder of the division of left operand by right operand.
+6. Exponent (**): Used to raise a number to a power.
+
+## Assignment Operator:- 
+1. Simple Assignment (=): Assigns a value to a variable.
+2. Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to left operand.
+3. Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to left operand.
+4. Multiplication Assignment (*=): Multiplies the left operand by the right operand and assigns the result to left operand.
+5. Division Assignment (/=): Divides the left operand by the right operand and assigns the result to left operand.
+6. Remainder Assignment (%=): Assigns the remainder of division between left and right operands to left operand.
+7. Exponentiation Assignment (**=): Raises the left operand to the power of the right operand and assigns the result to left operand.
+
+## Comparision Operator:- 
+1. Equal to (==): Compares if two operands are equal.
+2. Not equal to (!=): Compares if two operands are not equal.
+3. Strict equal to (===): Compares if two operands are equal and of the same data type.
+4. Strict not equal to (!==): Compares if two operands are not equal and of the same data type.
+5. Greater than (>): Checks if left operand is greater than right operand.
+6. Less than (<): Checks if left operand is greater than or equal to right operand.
+7. Greater than equal to (>=): Checks if left operand is greater than or equal to right operand.
+8. Less than equal to (<=): Checks if left operand is less than or equal to right operand.
+
+## Logical Opercators :-
+1. Logical AND (&&): Returns true if both operands are true.
+2. Logical OR (||): Returns true if either of the operands is true.
+3. Logical NOT (!): Returns the opposite of the operand's boolean value.
+
+# Conditional Statement :-
+-To implement some condition in the code.
+-There are 3 types of conditional statements are there
+## if Condition :-
+-When we have one statement which we want to execute based on a condition then we use ifcondition. If the condition is true then statement will execute.
+Syntax :- if (condition){ statement }
+
+## if-else Condition :-
+-When we have two statements but one condition then we use if-else condition.
+-If the condition is true then statement under if block will execute if the condition is false then the else block will execute. otherwise false.
+Syntax :- if (condition){ statement } else { statement }
+
+## if-elif condition :-
+-When we have multiple statement and multiple condition then we use elseif condition.
+Syntax :- if (condition){ 
+    statement 
+    } 
+    else if(condition){ 
+        statement 
+    } else if(condition){ 
+        statement 
+    } else { 
+        statement }
+
+## Switch case :-
+-Switch statement is used to execute different blocks of code based on the value of an expression. 
+-It provides a cleaner alternative to multiple if-else conditions.
+
+Syntax:- 
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    default:
+        // Code to execute if no case matches
+}
+
+# Loops in JS:-
+When we have to run the same set of instruction over and over again, each time with a different or with same value then we use loops.
+
+## for loop:-
+- for loops provides concise way of writting the loop structure containing initializaton, condition, and iteration in one line.
+-A for loop repeats until a specified condition evaluates to false.
+Syntax:-
+for(initializaton; condition; iteration){
+    //instruction
+}
+
+## while loop:- 
+- When we know starting point but we don't know the ending point, we use while loop.
+Syntax:-
+initializaton;
+while(condition){
+    //instruction
+    iteration;
+}
+
+## do-while loop:-
+- do-while loop is similar to the while loop, but the only difference is that it executes the instruction first then it checks the condition. That's why even if the condition is false still the block of code will execute at-least once.
+Syntax:-
+initializaton;
+do{
+    //instruction
+    iteration;
+}while(condition);
+
+## for-of loop:-
+- for-of is a loop that iterates through the values of an iterable (such as an array or string).
+- It directly provides each value of the iterable, which can be processed within the loop.
+Syntax:- 
+for(let iterator of variable){
+    //instruction
+}
+
+## for-in loop:-
+- for-in is a loop that iterates through the keys of an object.
+Syntax:- 
+for(let iterator in variable){
+    //instruction
+}
+
+# Array inbuilt methods:-
+-Arrays have a variety of built-in methods that help manipulate and process data efficiently.
+1. push():- It is used to add numbers of elements into an array at it's last index position.
+Syntax:- array.push(newElemets)
+
+2. pop():- It is used to remove one element from an array from it's last index position.
+Syntax:- array.pop()
+
+3. unshift():- It is used to add numbers of elements into an array at it's starting index position.
+-The previous index position in the array will be switched  by the new elements, so the original elements in the aray will switch to it's next index position.
+Syntax:- array.unshift(newElemets)
+
+4. shift():- It is used to remove one element from the starting index position from the original array.
+-It will make all other remaining elements in the array to shift to it's previous index position.
+Syntax:- array.shift()
+
+5. splice():- It is used to ad or remove elements from any specific index position.
+-It has 3 arguments-
+    -starting index
+    -delete count
+    -newElemets
+-From the start index we can delete no of values and add new elements from same index position.
+Syntax:- array.splice(startIndex, deleteCount, newElemets)
+
+6. slice():- It is used to create a sub-array from an original array.
+- It can't affect the original array.
+- slice() takes two arguments-
+    -start index
+    -end index
+-It takes out the elements from the start index, till the end index excluding the end index.
+Syntax:- array.slice(startIndex, endIndex)
+
+7. reverse():- It is used to reverse the order of elements based on their index position.
+Syntax:- array.reverse()
+
+8. toString():- It is used to convert all the array elements into a single string.
+Syntax:- array.toString()
+
+9. includes():- It is used to find the existance of an element in the array.
+-If the element is present in the array then it returns true else it returns false.
+Syntax:- array.includes()
+
+# String and it's methods:-
+-Strings in JS are immutable, meaning once created their values can't be change. 
+
+## Template String:- 
+-The collection of character that is written inside backtick(``) is considered as 'template string'.
+-The advantage of using template string is- 
+i)It let's user to interpolin the dynamic variable of JS inside the string.
+ii)It lets user to initialize multiple lines of string.
+
+## Template Literals:-
+By using `${variableName}` we can create a dynamic variable that can be access inside an template string.
+Syntax:- `This is a template literals ${variableName}`
+
+## String inbuilt methods:- 
+1. indexOf():- It returns the first index occurrence of a specific substring within the original string.
+Syntax:- string.indexOf("subString")
+
+2. lastIndexOf():- It returns the last index occurrence of a specific substring within the original string.
+Syntax:- string.lastIndexOf("subString", endIndex)
+
+3. chatAt():- It returns the character at the specified index in the original string.
+Syntax:- string.chatAt(indexPosition)
+
+4. toUpperCase():- It converts all the characters in the string to uppercase.
+Syntax:- string.toUpperCase()
+
+5. toLowerCase():- It converts all the characters in the string to lowercase.
+Syntax:- string.toLowerCase()
+
+6. replace():- It replaces first occurrence of a specified substring with another substring in the original string.
+Syntax:- string.replace("searchString", "newString")
+
+7. replaceAll():- It replaces all occurrence of a specified substring with another substring in the original string.
+Syntax:- string.replaceAll("searchString", "newString")
+
+8. slice():- Extracts a section and returns a substring from start inex and end index but end index is excluded.
+Syntax:- string.slice(startIndex, endIndex)
+
+9. split():- It splits the string into an array of strings based on a specific separator.
+Syntax:- string.split("separator")
+
+10. length:- It is an operator used to find the length of a string.
+Syntax:- string.length
+
+# Function in JS:- 
+-Functions are a set of instruction or block of code used to perform some specific task.
+-There are two types of functions:-
+    -Pre-defined functions
+    -User-defined Functions
+
+## Pre-defined function:-
+-A function which is already written by JS developers with some specific task is known as pre-defined function.
+e.g:- push(), pop(), log(),....
+
+## User-defined function:- 
+- A function which is declared and written some instruction by the user is known as user-defined function.
+e.g: normal function,...
+-In JS to return a output from a function, we use "return" keyword.
+-There are two way we can create a function-
+i)-Type-A(Without parameter):- A function without parameters does not require any external input when called.
+-It simply executes a set of instructions.
+e.g:- function greet(){
+    print("Hello, everyone!")
+}
+greet()
+
+ii)-Type-B(With parameter):- A function with parameters allows us to pass values to customize its behavior.
+e.g:- function greet(name){
+    print(f"Hello, {name}!")
+}
+greet("Manas")  
+
+## Types of user-defined function:-
+1. Normal function:- A function which is declared using both function keyword and function name is known as normal function. 
+Syntax:- function functionName(parameter){
+    //instruction
+}
+
+2. Anonymous function:- A function which is declared without a function name but declared using function keyword and stored in a variable is called as anonymous function.
+Syntax:- const variableName = function(){
+    //instruction
+}
+
+3. Arrow function:- A function without a function keyword. 
+-Instead of function keyword we use arrow symbol.
+Syntax:- const functionName = ()=>{
+    //instruction
+}
+
+4. Callback function:- It is a function which is used to pass as an argument to another function.
+Syntax:- ()=>{
+    //instruction
+}
+
+# forEach() :-
+-It is a looping condition where the iterator of forEach loop will iterates through every elements in the array.
+Syntax:- array.forEach((iterator)=>{
+    //instruction
+})
+-It takes a Callback function as an argument in which the user will pass the iterator(accumulator) that iterates through every element of the array.
+
+# Array methods:-
+10. map():- It is used to traverse(visit) every element in the array.
+-It uses a callback function as an argument. 
+-Callback function uses accumulator as an argument, where each item will store once at a time starting from zero index.
+Syntax:- array.map((item)=>{
+    //instruction
+})
+
+11. filter():- It is used to traverse every element in the array and it will return a sub-array based on some condition.
+-If the condition is true then it will return the value else it will skip.
+Syntax:- array.filter((item)=>{
+    return condition;
+})
+
+12. reduce():- It is used to reduce multiple elements of an array into a single value.
+-It accepts a callback function that has two arguments; initial value and accumulator.
+Syntax:- array.reduce((initialValue, accumulator)=> initialValue += accumulator, 0)
+
+# DOM(Document Object Model):-
+-The document object model is a programming interface that provides a structured representation of HTML and XML document.
+-It defines the logican structure of documents and the way a document is accessed and manipulated.
+-It represents the document as a tree like structure, where each node represents a part of the document(elements, attribute, text, comment).
+
+## Why we used DOM in Javascript :-
+-JavaScript can change all the HTML element in the page.
+-JavaScript can create, delete or edit any HTML node in the document.
+-JavaScript can also manipulate CSS styling directly.
+
+## Windows object :-
+-The window object represents an open window in a browser. It is a browser object & it automatically created by browser.
+-It is also a global object with lots of properties & method.
+
+## DOM Selection methods:-
+1. getElementById():- It selects an element from the document by ID name, which must be unique within the document.
+Syntax:- document.getElementById("idName")
+
+2. getElementsByClassName():- It returns a HTMLCollection of elements with the specified class name.
+Syntax:- document.getElementsByClassName("className")
+
+3. getElementsByTagName():- It returns a HTMLCollection of elements based on their tag name withing the document. 
+Syntax:- document.getElementsByTagName("p")
+
+4. getElementsByName():- It returns a collection of elements with a given name attribute.
+Syntax:- document.getElementsByName("name")
+
+5. querySelector():- It returns the first element within the document that matches the specified selector.
+-It uses CSS_style selector mechanism to select elements (.className, #idName, tagName).
+Syntax:- document.querySelector("selector")
+
+6. querySelectorAll():- It is used to select and return the collection fo Nodes or elements using CSS selector mechanism. (.className, #idName, tagName)
+-It selects all the nodes that matches the specified selector.
+Syntax:- document.querySelectorAll("selector")
+
+## Attribute Manipulation:- 
+-getAttribute(attr): Retrieves the value of the specified attribute from an element.
+-setAttribute(attr, value): Sets or updates the value of a specified attribute on an element.
+
+##Insert Element :-
+-node.append(ele) -> adds at the end of node (inside)
+-node.prepend(ele) -> adds at the start of node (inside)
+-node.after(ele) -> adds after the node (outside)
+-node.before(ele) -> adds before the node (outside)
+
+##Delete element:-
+-node.remove() -> remove/delete the node
+
+# Prompt in JavaScript:-
+-prompt() is a built-in function that allows users to input text.
+-It displays a dialog box with an optional message and an input field.
+-e.g:- let userName = prompt("Enter your name:");
+console.log("Hello, " + userName);
+
+# Alert in JavaScript:- 
+-alert() is a built-in function used to display messages in a pop-up box.
+-It pauses script execution until the user closes the alert.
+-Useful for notifications or warnings.
+-e.g:- alert("This is an alert message!");
+
+# Event in Javascript :-
+-The change in the state of an object is known as event.
+-Events in JavaScript allow us to interact with web pages dynamically.
+-Events are interactions that occur within a webpage.
+## Types of Events:-
+-Mouse Events: click, dblclick, mousedown, mouseup, mouseover, mouseout,...
+-Keyboard Events: keydown, keypress, keyup,...
+-Form Events: submit, change, focus, blur,...
+-Window Events: load, resize, scroll,...
+
+# Event Hnadling in JavaScript:-
+-JavaScript allows us to respond to user actions like clicks, key presses, and mouse movements through event handling.
+-Event handlers are functions that execute when an event occurs.
+Syntax:- node.event = () => { // handle here }
+
+## Event Object in JavaScript:-
+The Event Object is a special object in JavaScript that contains details about an event that occurs, such as a button click, mouse movement, or keyboard press. 
+-All event handlers have access to the event object, which provides various properties and methods.
+Syntax:
+node.event = (e) => {
+// handle event here
+}
+-Some common properties of Event Object (`e`):
+- 'e.target' :- Refers to the element that triggered the event.
+- 'e.type' :- Returns the type of the event (e.g., "click", "keydown").
+
+## Event Listener in JavaScript:-
+-The Event Listener is a method used to listen for an event on an element and execute a callback function when the event occurs.
+Syntax:-
+node.addEventListener(event, callback);
+node.removeEventListener(event, callback);
+
+> Note: When removing an event listener, the callback function reference must be the same as when it was added.
+Key Points:
+- 'addEventListener()' allows adding multiple events on the same element without overwriting previous ones.
+- 'removeEventListener()' requires the exact same function reference that was used in 'addEventListener()'.
+
+# Prototype (Special Object) in JavaScript :-
+-In JavaScript, every object has an internal property called prototype, which acts as a blueprint for other objects. 
+-Prototypes allow objects to inherit properties and methods from other objects, promoting code reusability.
+
+Key Points:-
+1. Setting Prototype: We can set the prototype using '__proto__' or 'Object.create()'.
+2. Method Overriding: If an object and its prototype have the same method, the object's method takes precedence.
+
+# Classes in JavaScript:-
+-A class in JavaScript is a template for creating objects. -It allows defining properties (state) and methods (behavior) that objects created from the class will have.
+Syntax:-
+class ClassName {
+  constructor() {
+    // Initialization code
+  }
+  method1() {
+    // Method definition
+  }
+}
+let myObj = new ClassName(); // Creating an object
+
+# Constructor in JavaScript:-
+-A constructor is a special method inside a class that is automatically called when an object is created using the `new` keyword. 
+-It is used to initialize object properties.
+e.g:- class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  introduce() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
+}
+const user = new Person("Alice", 25);
+user.introduce(); 
+
+# Inheritance in JavaScript:-
+-Inheritance allows a child class to inherit properties and methods from a parent class. 
+-This avoids code duplication and promotes reusability.
+Syntax:-
+class Parent {
+  // Properties & methods
+}
+class Child extends Parent {
+  // Properties & methods
+}
+
+Note :- if child & parent have same property , child methods will be used(method overiding)
+
+# Status code :-
+200 -> ok
+201 -> created
+202 -> accepted
+300 -> multiple choice
+302 -> found
+400 -> bad request
+402 -> payment required
+404 -> Not found
+406 -> not accepted
+408 -> request timeout
+500 -> internal server error
+502 -> bad gateway
+504 -> gateway timeout
+
+# Sync in Javascript :-
+## Synchronous :-
+-Synchronous means the code runs in a particular sequence of instruction given in the program.
+-Each instruction waits for the previous instruction to complete its execution.
+
+## Asynchronous :-
+-Due to synchronous programming , sometimes imp. instruction get blocked due to some previous instruction, which couses a delay in the UI.
+-Asynchronous code execution allows to execute next instruction immediatelly and doesn't block the flow.
+
+# Callback Hell:-
+-Callback hell refers to a situation where multiple nested callbacks are used in asynchronous JavaScript, forming a pyramid-like structure. This makes the code difficult to read, debug, and maintain.
+
+Example of Callback Hell-
+Let's say we want to perform a sequence of asynchronous operations:
+1. Fetch user data
+2. Get user posts
+3. Get comments on the first post
+
+Problems with Callback Hell:
+- Hard to read and maintain
+- Difficult to debug errors
+- Code structure grows into a pyramid shape (hard to refactor)
+
+#Promise :-
+-It is a solution of callback hell.
+-It is an object in JavaScript.
+-Promise is a way of handling a request and response between the client and the server.
+syntax :- let promise = new Promise((resolve, reject) => { // statement })
+
+-Promise have 3 stages:-
+1)pending - The initial stage of promise
+2)resolve - The response is successfull
+3)reject - Response is failed
+
+-If the response is successfull then promise accepts the response using .then() block.
+Syntax:- promise.then((res) => {......})
+-If the response is failed then promise uses .catch() block.
+Syntax:- promise.catch((err) => {......})
+
+## Fetch-Api :-
+the fetch API provides an interface for fetching data.
+it uses Request & Response objects.
+The Fetch() method is used to fetch a data.
+syntax :- let promise = fetch(URL)
+
+# Async & Await in Javascript :-
+async function always returns a promise.
+syntax :- async function myFunc(){ // statement }
+Note :- await pauses the execution of its surrounding async function until the promise is settled.
+
+# Operations on Objects in JS:-
+## Add a new Key:- 
+
+## Update the Object:-
+
+## Delete Operator in Object:-
+
+13) sort() method :-
+
+# Hoisting in JS:-
